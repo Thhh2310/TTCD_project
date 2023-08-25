@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    color: #222;
+    font-family:'font-medium' ;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ /* header */
+ /* header{
+    border-bottom: 1px solid #000;
+ } */
+ header nav{
+    display: flex;
+    align-items: center;
+    width: calc(12*100%/18);
+    margin: auto;
+    justify-content: space-between;
+    padding: 1rem;
+ }
+ header nav .menu{
+    display: flex;
+    width: calc(7*100%/12);
+    justify-content: space-between;
+ }
+ header nav .menu .menu-item{
+    position: relative;
+    line-height: 2rem;
+ }
+ header nav .menu .menu-item:first-child:after{
+    content: "";
+    position: absolute;
+    left: 0;right: 0; bottom: 0;
+    background-color: #bd945f;
+    height: 0.3rem;
+    width: 60%;
+}
+header nav .menu .menu-item:hover::after{
+    content: "";
+    position: absolute;
+    left: 0;right: 0; bottom: 0;
+    background-color: #bd945f;
+    height: 0.3rem;
+    width: 60%;
+}
+
+
+ /* main */
+/* 1. banner */
+main .banner .container .banner-img{
+    width: 100%;
+}
+main .banner .container .banner-img img{
+    width: 100%;
+}
+main .banner .container{
+    position: relative;
+}
+main .banner .container .introduction{
+    position: absolute;
+    left: 5rem;right: 0;top: 5rem;
+    width: calc(12*100%/18);
+    margin: auto;
+}
+main .banner .container .introduction h1{
+    font-family:'font-ultra' ;
+    font-size: 2.5rem;
+}
+main .banner .container .introduction p{
+    width: 50%;
+    text-align: justify;
+    margin: 2rem 0;
+}
+main .banner .container .introduction button{
+    border: none;
+    background-color: #bd945f;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-family: 'font-ultra';
+}
+/* 2. product */
+main .product {
+    background-color: #f3f3f3;
+}
+main .product p{
+    text-align: center;
+}
+
+main .product .container,
+main .product .hot-product{
+    width: calc(12*100%/18);
+    margin: auto;
+}
+main .product .container .category{
+    padding: 4rem;
+    background-color: #fff;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+main .product .container .category img{
+    width: 50%;
+}
+
+main .product .hot-product h2{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    position: relative; 
+    text-align: center;
+    font-size: 1.5rem;
+}
+main .product .hot-product h2::after{
+    content: "";
+    position: absolute;
+    left: 44%;
+    right: 0;
+    top: 1.6rem;
+    bottom: 0;
+    background-color: brown;
+    height: 0.2rem;
+    width: 8rem;
+ }
+main .product .hot-product .produce{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+main .product .hot-product .produce .item{
+    margin: 0 1rem;
+}
+main .product .hot-product .produce button{
+    background: rgba(167, 25, 25, 0.18);
+    border-radius: 50%;
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+main .product .hot-product .produce button.left{
+    left: -25px;
+}
+main .product .hot-product .produce button:hover{
+    background-color: #bd945f;
+    cursor: pointer;
+}
+main .product .hot-product .produce button.right{
+    right: -25px;
+}
+main .product .hot-product .produce img{
+    width: 100%;
+}
+main .big{
+    color: violet;
+    font-size: 1rem;
+}
+/* 3. about_us */
+/* main .about_us .background img{ 
+    width: 100%;
+    filter: brightness(30%);
+}
+main .about_us .container{
+    position: relative;
+}
+main .about_us .we-will h2{
+    left: 0; right: 0; top: 5%;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+main .about_us .we-will h2::after{
+    content: "";
+    position: absolute;
+    left: 46%;
+    right: 0;
+    top: 1.6rem;
+    bottom: 0;
+    background-color: brown;
+    height: 0.4rem;
+    width: 8rem;
+ }
+main .about_us .we-will .bigp img{
+    position: absolute;
+    left: 18%; right: 0; top: 13%;
+    width: 30%;
+}
+main .about_us .we-will p{
+    position: absolute;
+    left: 50%; right: 0; top: 13%;
+    width: 32%;
+    color: #fff;
+    text-align: justify;
+} */
+
+.backgourd-about{
+    position: absolute;
+    z-index: -1 ;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/images/ve-chung-toi/bg-about-us.jpg);
+    background-size: cover;
+    filter: brightness(40%);
+}
+.container h2{
+    padding: 20px;
+    font-size: 23px;
+    text-align: center;
+    color: #fff;
+}
+.ccabout{
+    width: calc(12*100%/18);
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.img-we-one{
+    width: 48%;
+}
+.img-we-one img{
+    width: 100%;
+}
+.about-content{
+    width: 46%;
+}
+.about-content p{
+    color: #fff;
+    font-size: 12px;
+    text-align: justify;
+}
+.about--list-img{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+.img-we-img{
+    width: 23%;
+}
+.img-we-img img{
+    width: 100%;
+}
+
+
+/* 4. news */
+
+ /* footer */
+ footer{
+    margin-top: auto;
+    background-color: #363636;
+    padding: 2rem 0;
+ }
+ footer .container{
+    display: flex;
+    /* align-items: center; */
+    width: calc(12*100%/18);
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem;
+    line-height: 1.7rem;
+ }
+ footer li, footer a, footer .title, footer i{
+    color: #fff;
+ }
+  footer li, footer a{
+    font-family:'font-thin' ;
+ }
+ footer .title{
+    margin-bottom: 1rem;
+    position: relative;
+ }
+  footer .title::after{
+    content: "";
+    position: absolute;
+    left: 0;right: 0;bottom: 0;
+    background-color: #fff;
+    height: 0.2rem;
+    width: 5rem;
+ }
+ footer .contact ul li:first-child{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+ }
+ footer .contact ul li div{
+    width: 3rem;
+    margin-right: 14px;
+ }
+  footer .contact ul li div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+ }
+ footer .contact ul li:last-child div{
+    width: 10rem;
+}
+
