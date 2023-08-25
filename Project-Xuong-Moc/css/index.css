@@ -115,7 +115,9 @@ main .product .container .category{
 main .product .container .category img{
     width: 50%;
 }
-
+.category > div{
+    text-align: center;
+}
 main .product .hot-product h2{
     margin-top: 5rem;
     margin-bottom: 2rem;
@@ -130,8 +132,8 @@ main .product .hot-product h2::after{
     right: 0;
     top: 1.6rem;
     bottom: 0;
-    background-color: brown;
-    height: 0.2rem;
+    background-color: #bd945f;
+    height: 0.4rem;
     width: 8rem;
  }
 main .product .hot-product .produce{
@@ -191,7 +193,7 @@ main .about_us .we-will h2::after{
     right: 0;
     top: 1.6rem;
     bottom: 0;
-    background-color: brown;
+    background-color: #bd945f;
     height: 0.4rem;
     width: 8rem;
  }
@@ -212,17 +214,29 @@ main .about_us .we-will p{
     position: absolute;
     z-index: -1 ;
     width: 100%;
-    height: 100%;
-    background-image: url(../images/images/ve-chung-toi/bg-about-us.jpg);
+    height: 110%;
+    background-image: url(../images/ve-chung-toi/bg-about-us.jpg);
     background-size: cover;
-    filter: brightness(40%);
+    filter: brightness(30%);
 }
 .container h2{
     padding: 20px;
     font-size: 23px;
     text-align: center;
     color: #fff;
+    /* position: relative; */
 }
+ /* main .about_us.container h2::after{
+    content: "";
+    position: absolute;
+    left: 46%;
+    right: 0;
+    top: 1.6rem;
+    bottom: 0;
+    background-color: #bd945f;
+    height: 0.4rem;
+    width: 8rem;
+ } */
 .ccabout{
     width: calc(12*100%/18);
     display: flex;
@@ -250,14 +264,131 @@ main .about_us .we-will p{
     padding-top: 12px;
 }
 .img-we-img{
-    width: 23%;
+    width: 22%;
 }
 .img-we-img img{
     width: 100%;
 }
 
-
+.reason{
+    width: calc(12*100%/18);
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.general{
+    top: 1rem;
+}
+.private{
+    width: calc(50%-1rem);
+    margin: 1rem 1rem;
+}
+.private-ff{
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+}
+.private-ff img{
+    width: 12%;
+}
+.text-ff{
+    margin: 2rem 1rem;
+}
+.text-ff h3{
+    color: #bd945f;
+    font-family:'font-ultra' ;
+    font-size: 20px;
+}
 /* 4. news */
+.news{
+    margin-top: 7%;
+}
+.news h2{
+    color: rgb(10, 10, 73);
+    position: relative;
+}
+.news h2::after{
+    content: "";
+    position: absolute;
+    left: 46%;
+    right: 0;
+    top: 3.3rem;
+    bottom: 0;
+    background-color: #bd945f;
+    height: 0.4rem;
+    width: 8rem;
+}
+.news-img{
+    width: calc(12*100%/18);
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.news .news-ff img{
+    width: 95%;
+}
+.news .news-text{
+    position: relative;
+    background-color: #bd945f;
+    width: 95%;
+    top: -9rem;
+    text-align: justify;
+}
+.news .news-text h3{
+    color: #fff;
+    font-size: 1.6rem;
+    margin: .5rem 1.5rem;
+    padding-top: .5rem;
+}
+.news .news-text p{
+    margin: 0 1.5rem;
+    padding-bottom: .5rem;
+}
+.news-imgs{
+    width: 100%;
+}
+.news-ffs{
+    display: flex;
+}
+.news-ffs img{
+    width: 35%;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+}
+.news-texts >h3{
+    color: #bd945f;
+}
+.news-texts >p{
+    text-align: justify;
+    font-size: 0.8rem;
+    margin-top: .7rem;
+}
+.news-imgs >button{
+    border: 0px;
+    background-color: #fff;
+    color: #bd945f;
+    margin-top: .7rem;
+}
+
+.cople .partner{
+    width: calc(12*100%/18);
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.partner ul{
+    display: flex;
+    width: 100%;
+}
+.partner ul img{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.partner-img img{
+    width: 100%;
+}
 
  /* footer */
  footer{
