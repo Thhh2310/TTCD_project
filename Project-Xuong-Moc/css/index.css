@@ -461,26 +461,90 @@ main .about_us .we-will p{
     .fa-bars{
         display: block!important;
     }
+    main .category >div{
+        width: 33%;
+    }
 }
 @media only screen and (max-width: 920px){
     main .banner .introduction{
-        position: absolute;
-        left: 5rem;right: 0;top: 5rem;
-        width: calc(12*100%/18);
-        margin: auto;
+        width: 30%;
     }
-    /* main .banner .introduction p{
-        color: #2c2e53;
-        font-size: .5rem;
-    } */
-
-
+    main .introduction >h1{
+        font-size: 1rem;
+    }
+    main .introduction p{
+        font-size: .7rem;
+    }
+    main .introduction >button{
+        font-size: 60%;
+        width: 20%;
+        margin-top: -10rem;
+    }
+    main .about_us .ccabout .img-we-one{
+        width: 100%;
+        margin-left: -5rem;
+        margin-right: 3rem;
+    }
+    main .about_us .about-content >p{
+        font-size: 9px;
+    } 
+    main .reason .text-ff >p{
+        font-size: 7px;
+    }
+    main .reason .text-ff >h3{
+        font-size: 15px;
+    }
+    .news h2::after{
+        left: 45%;
+        width: 6rem;
+    }
     .news-img{
         flex-direction: column;
     }
     footer .container{
         flex-direction: column;
         /* text-align: center; */
+    }
+}
+@media only screen and (max-width: 400px){
+    main .category >div{
+        width: 50%;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-size: 2rem;
+    }
+    .slick-prev{
+        left: -35px;
+    }
+    main .product .item >img{
+        width: 130%;
+    }
+    main .product .item >p{
+        display: none;
+    }
+    main .about_us .ccabout{
+        display: block;
+        width: 70%;
+        margin-left: 10rem;
+    }
+    main .about_us h2{
+        font-size: 18px;
+    }
+    main .about_us .reason{
+        display: block;
+    }
+     main .news h2::after{
+        left: 40%;
+        width: 6rem;
+    }
+    main .news .news-text >h3,
+    main .news .news-text >p{
+        font-size: 10px;
+        padding-bottom: 1rem;
+    }
+    main .news .news-texts >h3,
+    main .news .news-texts >p{
+        font-size: 10px;
     }
 }
 
