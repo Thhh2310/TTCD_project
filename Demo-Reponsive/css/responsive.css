@@ -1,0 +1,11 @@
+ /* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+
+.content{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+.row{
+    flex-wrap: wrap;
+}
