@@ -1,0 +1,71 @@
+ /* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+.row{
+    flex-wrap: wrap;
+}
+.col{
+    width: 80%;
+}
+
+/* header nav .menu{
+    display: none;
+}
+header{
+    position: relative;
+}
+.menu .menu-item a{
+    font-size: .6rem;
+}
+header nav .response-menu{
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 20%;
+    background-color: #f3f3f3;
+    top: 40%;
+    z-index: 3;
+    text-align: center;
+}
+.fa-bars{
+    display: block!important;
+} */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .col{
+        width: 80%;
+    }
+    .menu .menu-item a{
+        font-size: .7rem;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .col{
+        width: 40%;
+    }
+    /* header nav .menu{
+        display: flex;
+    }
+    .fa-bars{
+        display: none;
+    } */
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .col{
+        width: 45%;
+    }
+    .menu .menu-item a{
+        font-size: .9rem;
+    }
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .col{
+        width: 30%;
+    }
+ }

@@ -451,7 +451,6 @@ main .about_us .we-will p{
         display: block;
         position: absolute;
         right: 0;
-        left: auto;
         width: 20%;
         background-color: #f3f3f3;
         top: 40%;
@@ -533,7 +532,7 @@ main .about_us .we-will p{
     main .about_us .reason{
         display: block;
     }
-     main .news h2::after{
+    main .news h2::after{
         left: 40%;
         width: 6rem;
     }
